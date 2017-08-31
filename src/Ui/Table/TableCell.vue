@@ -25,10 +25,6 @@ export default {
   font-size: $font-size-small;
 }
 
-.kirby-table-cell > .link {
-  border-bottom: 2px solid currentColor;
-}
-
 /* types */
 .kirby-table-cell[data-type="image"] {
   padding: 0;
@@ -58,6 +54,11 @@ export default {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.kirby-table-cell[data-type="link"] a[data-tabbed] {
+  position: relative;
+  @include focus-ring;
+  z-index: 1;
 }
 
 .kirby-table-cell[data-type="icon"] {

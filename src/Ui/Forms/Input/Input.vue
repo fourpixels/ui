@@ -56,11 +56,11 @@ export default {
   align-items: stretch;
   background: $color-white;
   border: 2px solid $color-border;
-  border: 2px solid #fff;
   border-radius: $border-radius;
 }
 .kirby-input[data-focus] {
   border-color: $color-focus;
+  box-shadow: $box-shadow-focus;
 }
 .kirby-input[data-error] {
   border-color: $color-negative;
@@ -98,7 +98,6 @@ export default {
 }
 .kirby-input-icon {
   width: 3rem;
-  border-left: 1px dashed $color-border;
   justify-content: center;
   align-items: center;
   color: $color-dark;

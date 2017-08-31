@@ -8,7 +8,7 @@
           </router-link>
         </kirby-table-cell>
         <kirby-table-cell type="link">
-          <router-link :to="item.link">{{ item.text }}</router-link>
+          <router-link v-tab :to="item.link">{{ item.text }}</router-link>
         </kirby-table-cell>
         <kirby-table-cell v-if="item.info" type="info">
           <router-link :to="item.link">{{ item.info }}</router-link>
@@ -16,7 +16,7 @@
         <kirby-table-cell v-if="item.options" type="button">
           <kirby-dropdown>
             <kirby-button
-              icon="angle-down"
+              icon="dots"
               alt="Options"
               @click="$refs['dropdown-' + index][0].toggle()">
             </kirby-button>
